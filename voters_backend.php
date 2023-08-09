@@ -1,8 +1,6 @@
 <?php
-
 	namespace fingerprint;
 	include('dbconn2.php');
-	
 	
 	if(isset($_POST['loadvoterarea'])) {
 		$data = '<option value="" selected="selected">Select Department</option>';
@@ -30,7 +28,7 @@
 						<th>Department</th>
 						<th>Action(s)</th>
 					</tr>';
-		$query = "SELECT * FROM `voters` WHERE voter_area = '$voterarea'"; 
+		$query = "SELECT * FROM `staff` WHERE dept = '$voterarea'"; 
 		$result = mysqli_query($conn, $query);
 
 		if(mysqli_num_rows($result) > 0) {
@@ -43,7 +41,7 @@
 							<td>'.$row['age'].'</td>
 							<td>'.$row['address'].'</td>
 							<td>'.$row['mobile'].'</td>
-							<td>'.$row['voter_area'].'</td>
+							<td>'.$row['dept'].'</td>
 							<td>
 								<button style="font-weight: bold" onclick="getVoterDetails('.$row['id'].')" class="btn btn-warning btn-sm">Edit</button>
 								<button style="font-weight: bold" onclick="deleteVoter('.$row['id'].')" class="btn btn-danger btn-sm">Delete</button>
@@ -58,14 +56,14 @@
 	}
 
 	if(isset($_POST['deleteid'])) {
-		$voterid = $_POST['deleteid'];
-		$query = "DELETE FROM voters WHERE id = '$id'";
+		$id = $_POST['deleteid'];
+		$query = "DELETE FROM staff WHERE id = '$id'";
 		mysqli_query($conn, $query);
 	}
 	
 	if(isset($_POST['id']) && isset($_POST['id']) != "") {
     	$id = $_POST['id'];
-    	$query = "SELECT * FROM voters WHERE id = '$id'";
+    	$query = "SELECT * FROM staff WHERE id = '$id'";
     	
     	if(!$result = mysqli_query($conn, $query)) {
         	exit(mysqli_error());
@@ -99,7 +97,7 @@
 		$newmobile = $_POST['newmobile'];
 		$newvoterarea = $_POST['newvoterarea'];
 
-    	$query = "UPDATE voters SET  name = '$newname', age = '$newage', address = '$newaddress', mobile = '$newmobile', voter_area = '$newvoterarea' WHERE id = '$hidden_voter_id'";
+    	$query = "UPDATE staff SET  name = '$newname', age = '$newage', address = '$newaddress', mobile = '$newmobile', dept = '$newvoterarea' WHERE id = '$hidden_voter_id'";
 
     	if(!$result = mysqli_query($conn, $query)) {
     		exit(mysqli_error());

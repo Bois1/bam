@@ -98,26 +98,6 @@ if (!isset($_SESSION['username'])) {
 				</div>
 			</div>
 		</div>
-		<!-- <div class="modal" id="deleteFingerprint">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h4 class="modal-title">Delete Fingerprint</h4>
-						<button type="button" class="close" data-dismiss="modal">&times;</button>
-					</div>
-					<div class="modal-body">
-						<div class="form-group">
-							<label>Status:</label>
-							<div id="status_area"></div>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<button type="button" style="font-weight: bold" class="btn btn-danger btn-sm" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div> -->
-
 	</div>
 	<script type="text/javascript">
 		$(document).ready(function() {
