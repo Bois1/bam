@@ -12,7 +12,7 @@ if (!isset($_SESSION['username'])) {
 <html>
 
 <head>
-	<title>Voters - FVS</title>
+	<title>All Staff - BAS</title>
 	<link rel="icon" href="images/logo.png">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -49,12 +49,12 @@ if (!isset($_SESSION['username'])) {
 				<div class="card">
 					<div class="card-body bg-light text-dark">
 						<div class="form-group">
-							<label style="font-weight: bold">Voter Area</label>
+							<label style="font-weight: bold">Staff Area</label>
 							<select type="text" name="voterarea" id="voterarea" class="form-control"></select>
 							<span id="error_voterarea" class="text-danger"></span>
 						</div>
 						<div class="text-center" style="margin-top: 20px; margin-bottom: 0px">
-							<button style="font-weight: bold; font-size: 15px" class="btn btn-sm btn-warning" onClick="loadVoters()">Show Voters</button>
+							<button style="font-weight: bold; font-size: 15px" class="btn btn-sm btn-warning" onClick="loadVoters()">Show All Staff</button>
 						</div>
 					</div>
 				</div>
@@ -65,12 +65,12 @@ if (!isset($_SESSION['username'])) {
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h4 class="modal-title">Edit Voter</h4>
+						<h4 class="modal-title">Edit A Staff</h4>
 						<button type="button" class="close" data-dismiss="modal">&times;</button>
 					</div>
 					<div class="modal-body">
 						<div class="form-group">
-							<label>Voter Name:</label>
+							<label>Staff Name:</label>
 							<input type="text" name="newname" id="newname" class="form-control" placeholder="Enter Voter Name..">
 						</div>
 						<div class="form-group">
@@ -85,10 +85,10 @@ if (!isset($_SESSION['username'])) {
 							<label>Mobile No.:</label>
 							<input type="text" name="newmobile" id="newmobile" class="form-control" placeholder="Enter Mobile Number..">
 						</div>
-						<div class="form-group">
+						<!-- <div class="form-group">
 							<label>Voter Area:</label>
 							<select type="text" name="newvoterarea" id="newvoterarea" class="form-control"></select>
-						</div>
+						</div> -->
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-warning btn-sm" data-dismiss="modal" onclick="updateVoterDetails()">Update</button>

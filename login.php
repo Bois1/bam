@@ -177,7 +177,7 @@
 						</div>
 						<div class="form-row mt-4">
 							<div class="col mb-md-0 text-center">
-								<label for="userIDVerify" class="my-text7 my-pri-color m-0">Specify UserID</label>
+								<label for="userIDVerify" class="my-text7 my-pri-color m-0">Specify StaffID</label>
 								<input type="text" id="userIDVerify" class="form-control mt-1" required>
 							</div>
 						</div>

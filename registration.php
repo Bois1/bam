@@ -100,7 +100,7 @@ if (!isset($_SESSION['username'])) {
 		<div class="modal-dialog modal-lg" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h3 class="modal-title my-text my-pri-color" id="createEnrollmentTitle">Create Enrollment</h3>
+					<h3 class="modal-title my-text my-pri-color" id="createEnrollmentTitle">Enroll new staff fingerprint</h3>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="clearCapture()">
 						<span aria-hidden="true">&times;</span>
 					</button>
@@ -120,7 +120,7 @@ if (!isset($_SESSION['username'])) {
 						</div>
 						<div class="form-row mt-2">
 							<div class="col mb-3 mb-md-0 text-center">
-								<label for="userID" class="my-text7 my-pri-color">Specify UserID</label>
+								<label for="userID" class="my-text7 my-pri-color">Specify Staff ID</label>
 								<input id="userID" type="text" class="form-control" required>
 							</div>
 						</div>
@@ -213,7 +213,7 @@ if (!isset($_SESSION['username'])) {
 						</div>
 						<div class="form-row mt-4">
 							<div class="col mb-md-0 text-center">
-								<label for="userIDVerify" class="my-text7 my-pri-color m-0">Specify UserID</label>
+								<label for="userIDVerify" class="my-text7 my-pri-color m-0">Specify StaffID</label>
 								<input type="text" id="userIDVerify" class="form-control mt-1" required>
 							</div>
 						</div>
@@ -271,7 +271,7 @@ if (!isset($_SESSION['username'])) {
 		let email = document.getElementById("email").value;
 		// Check if the input is empty or null
 		if (!name || !age || !address || !dept || !mobile || !email) {
-			alert('Please enter all value before you enrolling the fingerprint.');
+			alert('Please enter all value before you submit.');
 			return;
 		}
 		// If the input is valid, open the modal

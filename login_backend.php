@@ -6,10 +6,10 @@
 	$devid = file_get_contents('devid.txt');
 
 	if($devid == 0) {
-		$response = "Not Recognized!!";
+		$response = "Fingerprint Not Recognized!!";
 	}
 	else {
-		$response = "Recognized..";
+		$response = "Fingerprint Recognized!!";
 		$query = "SELECT name FROM voters WHERE devid = '$devid'";
 		$result = mysqli_query($conn, $query);
 

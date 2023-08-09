@@ -1,5 +1,5 @@
 <?php
-		$servername = "localhost";
+		$servername = "127.0.0.1";
 		$username = "root";
 		$password = "";
 		$dbname = "project";
@@ -68,7 +68,7 @@ $result = $con->query($query);
 
 if ($result->num_rows == 0) {
     // Record doesn't exist, so insert it
-    $insertQuery = "INSERT INTO users (username, password) VALUES ('$newUsername', '$newPass')";
+    $insertQuery = "INSERT INTO admins (username, password) VALUES ('$newUsername', '$newPass')";
     $con->query($insertQuery);
     // if ($conn->query($insertQuery) === TRUE) {
     //   //  echo "New record inserted successfully.";
