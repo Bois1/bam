@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>User Login - FVS</title>
+	<title>User Login - BAS</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="images/logo.png">
@@ -32,14 +32,14 @@
 			<div class="col-md-4"></div>
 			<div class="col-md-4"></div>
 			<div class="col-md-4">
-				<button type="button" class="btn btn-success  btn-sm" style="margin-top: 10px; margin-bottom: 50px; font-weight: bold" onClick="window.location.href='adminLogin.php'">Admin Login</button>
+				<!-- <button type="button" class="btn btn-success  btn-sm" style="margin-top: 10px; margin-bottom: 50px; font-weight: bold" onClick="window.location.href='adminLogin.php'">Admin Login</button> -->
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-4"></div>
 			<div class="col-md-4">
 				<div class="card">
-					<div class="card-header bg-success text-white font-weight-bold" style="text-align: center; font-size: 20px">User Login</div>
+					<div class="card-header bg-success text-white font-weight-bold" style="text-align: center; font-size: 20px">Hi User</div>
 					<div class="card-body bg-light">
 						<div id="controls" class="form-group col text-center" style="margin-top: 20px; margin-bottom: 0px">
 							<!-- <input style="font-weight: bold; font-size: 15px" name="verify_fingerprint" id="verifyIdentityButton" class="btn btn-sm btn-warning" onClick="verifyFingerprint()" value="Verify Fingerprint" /> -->
@@ -84,7 +84,7 @@
 						</div>
 						<div class="form-row mt-2">
 							<div class="col mb-3 mb-md-0 text-center">
-								<label for="userID" class="my-text7 my-pri-color">Specify UserID</label>
+								<label for="userID" class="my-text7 my-pri-color">Enter a UserID</label>
 								<input id="userID" type="text" class="form-control" required>
 							</div>
 						</div>
@@ -157,7 +157,7 @@
 		<div class="modal-dialog modal-lg" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h3 class="modal-title my-text my-pri-color" id="verifyIdentityTitle">Identity Verification</h3>
+					<h3 class="modal-title my-text my-pri-color" id="verifyIdentityTitle">Verify your Identity</h3>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="clearCapture()">
 						<span aria-hidden="true">&times;</span>
 					</button>
