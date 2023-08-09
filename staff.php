@@ -187,7 +187,7 @@ if (!isset($_SESSION['username'])) {
 
 		function deleteVoter(deleteid) {
 			var set_mode = '3';
-			var conf = confirm("Are you sure you want to delete this voter and associated fingerprint?");
+			var conf = confirm("Are you sure you want to delete this staff and associated fingerprint?");
 
 			if (conf == true) {
 				$('#verifyIdentity').modal("show");
@@ -212,7 +212,7 @@ if (!isset($_SESSION['username'])) {
 					$('#status_area').load('get_msg.php', function(response) {
 						if (response == "Deleted from device..") {
 							$('#status_area').val("Deleted from device..");
-							alert("Voter and associated fingerprint deleted successfully..");
+							alert("Staff and associated fingerprint deleted successfully..");
 							$('#deleteFingerprint').modal("hide");
 							loadVoters();
 						}
