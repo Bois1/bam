@@ -1,5 +1,5 @@
 <?php
-		$servername = "127.0.0.1";
+		$servername = "localhost";
 		$username = "root";
 		$password = "";
 		$dbname = "project";
@@ -39,7 +39,7 @@
 	
 	)";
 	
-	if ($conn->query($sql1) === TRUE) {
+	if ($conn->query($sql) === TRUE) {
 	  //  echo "Table created successfully<br>";
 	} else {
 		//echo "Error creating table: " . $conn->error . "<br>";
