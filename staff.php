@@ -109,7 +109,7 @@ if (!isset($_SESSION['username'])) {
 			var voterarea = $('#voterarea').val();
 
 			$.ajax({
-				url: "voters_backend.php",
+				url: "staff_backend.php",
 				type: "POST",
 				data: {
 					loadvoters: loadvoters,
@@ -142,7 +142,7 @@ if (!isset($_SESSION['username'])) {
 		function getVoterDetails(id) {
 			$("#hidden_voter_id").val(id);
 
-			$.post("voters_backend.php", {
+			$.post("staff_backend.php", {
 					id: id
 				},
 
@@ -167,7 +167,7 @@ if (!isset($_SESSION['username'])) {
 			var newvoterarea = $("#newvoterarea").val();
 			var hidden_voter_id = $("#hidden_voter_id").val();
 
-			$.post("voters_backend.php", {
+			$.post("staff_backend.php", {
 					hidden_voter_id: hidden_voter_id,
 					newname: newname,
 					newage: newage,
@@ -191,7 +191,7 @@ if (!isset($_SESSION['username'])) {
 				$('#verifyIdentity').modal("show");
 
 				$.ajax({
-					url: "voters_backend.php",
+					url: "staff_backend.php",
 					type: 'POST',
 					data: {
 						deleteid: deleteid
