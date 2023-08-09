@@ -10,7 +10,7 @@
 	}
 	else {
 		$response = "Fingerprint Recognized!!";
-		$query = "SELECT name FROM voters WHERE devid = '$devid'";
+		$query = "SELECT name FROM users WHERE devid = '$devid'";
 		$result = mysqli_query($conn, $query);
 
 		if(mysqli_num_rows($result) > 0) {

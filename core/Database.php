@@ -10,7 +10,7 @@ class Database {
     private const host = "localhost";
     private const user = "root";
     private const password = "";
-    private const database = "e-voting";
+    private const database = "bas";
     private $connection;
 
     function __construct(){
