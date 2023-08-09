@@ -32,7 +32,7 @@
 			<div class="col-md-4"></div>
 			<div class="col-md-4"></div>
 			<div class="col-md-4">
-				<!-- <button type="button" class="btn btn-success  btn-sm" style="margin-top: 10px; margin-bottom: 50px; font-weight: bold" onClick="window.location.href='adminLogin.php'">Admin Login</button> -->
+				<button type="button" class="btn btn-success  btn-sm" style="margin-top: 10px; margin-bottom: 50px; font-weight: bold" onClick="window.location.href='adminLogin.php'">Admin Login</button>
 			</div>
 		</div>
 		<div class="row">
