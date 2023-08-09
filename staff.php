@@ -49,7 +49,7 @@ if (!isset($_SESSION['username'])) {
 				<div class="card">
 					<div class="card-body bg-light text-dark">
 						<div class="form-group">
-							<label style="font-weight: bold">Staff Area</label>
+							<label style="font-weight: bold">Select Department To View</label>
 							<select type="text" name="voterarea" id="voterarea" class="form-control"></select>
 							<span id="error_voterarea" class="text-danger"></span>
 						</div>
@@ -71,7 +71,7 @@ if (!isset($_SESSION['username'])) {
 					<div class="modal-body">
 						<div class="form-group">
 							<label>Staff Name:</label>
-							<input type="text" name="newname" id="newname" class="form-control" placeholder="Enter Voter Name..">
+							<input type="text" name="newname" id="newname" class="form-control" placeholder="Enter Staff Name..">
 						</div>
 						<div class="form-group">
 							<label>Age:</label>
@@ -85,10 +85,10 @@ if (!isset($_SESSION['username'])) {
 							<label>Mobile No.:</label>
 							<input type="text" name="newmobile" id="newmobile" class="form-control" placeholder="Enter Mobile Number..">
 						</div>
-						<!-- <div class="form-group">
-							<label>Voter Area:</label>
+						<div class="form-group">
+							<label>Department</label>
 							<select type="text" name="newvoterarea" id="newvoterarea" class="form-control"></select>
-						</div> -->
+						</div>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-warning btn-sm" data-dismiss="modal" onclick="updateVoterDetails()">Update</button>
@@ -345,7 +345,7 @@ if (!isset($_SESSION['username'])) {
 						</div>
 						<div class="form-row mt-2">
 							<div class="col mb-3 mb-md-0 text-center">
-								<label for="userID" class="my-text7 my-pri-color">Specify UserID</label>
+								<label for="userID" class="my-text7 my-pri-color">Specify StaffID</label>
 								<input id="userID" type="text" class="form-control" required>
 							</div>
 						</div>

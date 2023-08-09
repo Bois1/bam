@@ -5,13 +5,13 @@
 	
 	
 	if(isset($_POST['loadvoterarea'])) {
-		$data = '<option value="" selected="selected">Select Voter Area..</option>';
-		$query = "SELECT voter_area_name FROM voter_area_list";
+		$data = '<option value="" selected="selected">Select Department</option>';
+		$query = "SELECT dept_name FROM dept_list";
 		$result = mysqli_query($conn, $query);
 
 		if(mysqli_num_rows($result) > 0){
 			while($row = mysqli_fetch_assoc($result)) {
-				$data .= '<option value="'.$row['voter_area_name'].'">'.$row['voter_area_name'].'</option>';
+				$data .= '<option value="'.$row['dept_name'].'">'.$row['dept_name'].'</option>';
 			}
 		}
 
@@ -22,13 +22,13 @@
 		$voterarea = $_POST['voterarea'];
 		$data = '<table style="margin-top: 10px" class="table table-bordered table-striped text-center">
 					<tr class="bg-warning text-white">
-						<th>Sl.</th>
+						<th>SN.</th>
 						<th>Name</th>
 						<th>Age</th>
 						<th>Address</th>
 						<th>Mobile</th>
-						<th>Voter Area</th>
-						<th>Operation(s)</th>
+						<th>Department</th>
+						<th>Action(s)</th>
 					</tr>';
 		$query = "SELECT * FROM `voters` WHERE voter_area = '$voterarea'"; 
 		$result = mysqli_query($conn, $query);

@@ -49,7 +49,7 @@ if (!isset($_SESSION['username'])) {
 							<input style="font-weight: bold; font-size: 15px" class="btn btn-sm btn-success" onClick="window.location.href='registration.php'" value="Add New Staff" />
 						</div>
 						<div class="text-center" style="margin-top: 20px; margin-bottom: 0px">
-							<input style="font-weight: bold; font-size: 15px" class="btn btn-sm btn-success" onClick="window.location.href='voters.php'" value="Manage Staffs" />
+							<input style="font-weight: bold; font-size: 15px" class="btn btn-sm btn-success" onClick="window.location.href='staff.php'" value="Manage Staffs" />
 						</div>
 						<!-- <div class="text-center" style="margin-top: 20px; margin-bottom: 0px">
 							<input style="font-weight: bold; font-size: 15px" class="btn btn-sm btn-success" onClick="window.location.href='candidates.php'" value="Add/Manage Candidates" />
